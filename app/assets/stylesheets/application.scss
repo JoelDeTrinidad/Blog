@@ -1,0 +1,119 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+  color: #1c3643;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #0a8ecd;
+  .fa, .fab, .fal, .far, .fas {
+    font-size: 1.5em;
+    margin: 0 .5em;
+    text-shadow: 0 0 15px rgba(0, 143, 211, 0.49);
+  }
+  &:last-child {
+    .fa, .fab, .fal, .far, .fas {
+      margin-right: 0 !important;
+    }
+  }
+  &.btn-blue {
+    color: #fff;
+    .fa, .fab, .fal, .far, .fas {
+      font-size: inherit;
+      margin: 0;
+      padding-right: 5px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.49);
+    }
+  }
+}
+
+nav.navbar {
+  background: -webkit-linear-gradient(0deg, #27434c 0, #35596f 25%, #1e5372);
+  a, p {
+    color: #fff;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .nav-item {
+    &:last-child {
+      padding-left: .5em;
+      padding-right: 0;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.border-separete {
+  border-right: 1px solid #fefefe;
+  margin-top: 3px;
+  height: 33px;
+}
+
+.user-name-style{
+  margin-top: 7px;
+  margin-left: 5px;
+  color: aliceblue;
+}
+
+.btn, input.btn {
+  background: -webkit-linear-gradient(right, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+  background: -moz-linear-gradient(right, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+  background: -o-linear-gradient(right, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+  background: -ms-linear-gradient(right, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+  background: linear-gradient(to left, #95ca3e 0%, #95ca3e 50%, #85c638 100%);
+  -webkit-box-shadow: 0 1px 1px 0 #58902d;
+  box-shadow: 0 1px 1px 0 #58902d;
+}
+
+.btn-blue, input.btn-blue {
+  background: #0791e6;
+  background: -webkit-linear-gradient(right, #0791e6 0%, #0791e6 50%, #028be0 100%);
+  background: -moz-linear-gradient(right, #0791e6 0%, #0791e6 50%, #028be0 100%);
+  background: -o-linear-gradient(right, #0791e6 0%, #0791e6 50%, #028be0 100%);
+  background: -ms-linear-gradient(right, #0791e6 0%, #0791e6 50%, #028be0 100%);
+  background: linear-gradient(to left, #0791e6 0%, #0791e6 50%, #028be0 100%);
+  -webkit-box-shadow: 0 1px 1px 0 #00436d;
+  box-shadow: 0 1px 1px 0 #00436d;
+  color: #fff;
+}
+
+.jumbotron {
+  h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  a {
+    color: #1c3643;
+    transition: all .3s linear;
+    &:hover {
+      color: #0a8ecd;
+    }
+  }
+}
+
+
+.text-style-article {
+  max-width: 97% !important;
+  text-align: justify !important;
+  margin-left: 35px !important;
+}

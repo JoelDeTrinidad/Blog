@@ -1,0 +1,31 @@
+<divclass="col-12">
+		<divclass="jumbotron">
+			<divclass="container">
+				<divclass="row">
+					<divclass="col-lg-8 col-md-10 mx-auto">
+						<h1class="article-header"><%= @article.title %></h1>
+						<pclass="author"><%= @article.user.name %></p>
+						<divclass="col mt-auto px-0">
+							<%= link_to '<- Volver', articles_path %>
+						</div>
+					</div>
+					<% if user_signed_in? %>
+						<divclass="col-12 text-right mt-auto">
+							<%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %>
+							<%= link_to @article, method: :delete, data: {confirm:'¿Estas seguro de que quieres eliminar el articulo?'} do%>
+							<iclass="fas fa-trash-alt"></i>
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<divclass="container">
+	<divclass="row">
+		<divclass="col-lg-8 col-md-10 mx-auto">
+			<p><%= (raw @article.body) %></p>
+		</div>
+	</div>
+</div>
